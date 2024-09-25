@@ -1,7 +1,14 @@
+# Blog Changelog
 
-# Changelog
+All notable changes to the blog will be documented in this section.
 
-All notable changes to this project will be documented in this file.
+## [0.0]
+
+- Initial release of the website
+
+# Theme Changelog
+
+All notable changes to the theme are be documented in this section.
 
 ## [1.1]
 

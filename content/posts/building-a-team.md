@@ -4,28 +4,31 @@ date = 2021-09-15
 [taxonomies]
 tags= ["conversations", "team"]
 +++
-Sharing your vision with your team.
 
-Sharing a detailed vision for a department top down will most likely limit possibilities in terms of strategy. Giving an overview of a sense of direction and a sense of purpose might be enough. Deciding top down will limit people and give them the feeling that they are not or at least less involved (which is actually the case in that matter). You will get better results letting the team make decisions; they are closer to the problem than you are anyways.
+## Sharing Your Vision with Your Team
+When sharing a vision for your department, a top-down approach can often stifle creativity and limit strategic potential. Rather than dictating every detail, offering a broad sense of direction and purpose can be more effective. If decisions are made solely from the top, team members may feel less involved—and rightly so. Letting the team drive decisions tends to produce better outcomes because they are closer to the challenges at hand.
 
-People are generally good and want to do good things.
+At the core, people generally want to do good and contribute positively.
 
-Keeping this in mind a valid strategy for building a team could be starting with people, then process will follow and lastly the goal will follow. Initially you will have to make sure that you get good people and that you nourish and support them. If they feel well and can make progress with a safety net; i.e., fail fast and fail forward. Then they will realize that they need a process to organize themselves more efficiently. From people, process will follow. Having people and process in place will result in progress.
+With that in mind, a sound strategy for building a successful team starts with focusing on people. From there, processes will naturally evolve, and progress will follow. Initially, your primary responsibility is to recruit talented individuals and provide them with the support they need to thrive. If people feel safe to take risks—knowing they can fail fast and fail forward—they will soon realize the need for processes to streamline their efforts. From strong people comes effective processes, and from there, progress is inevitable.
 
 1. People
 2. Process
 3. Progress
 
-Give people positive feedback.
+### Provide Positive Feedback
 
-Recognition of good work inspires people to do more. Unexpectedly this is also and even more so the case for leaders. Leaders generally do not get positive feedback. A possible approach to building a performing team could be done by tackling the following things in this order:
+Recognition is a powerful motivator. When people’s work is acknowledged, they are inspired to keep pushing. Interestingly, this applies even more so to leaders, who often receive little to no positive feedback themselves.
+
+A potential approach to building a high-performing team is to focus on the following, in this order:
 
 1. Values
 2. Vision
 3. Mission
 
-We go from things that are stable and should not change (values) to things that can change on a regular basis to achieve the vision (mission). A team should have clear values to outline their work and decisions. What is important and why do we care? What are we doing this for? We define a vision of what we believe the world should look like (a better place) if we succeed. Our mission is our plan in how to get there; it is the strategy to achieve our vision.
+Start with the most stable element—values. These guide decisions and behaviors and should remain constant over time. From there, develop a vision, which is how you want the world to change for the better if your team succeeds. Finally, define the mission—your strategy for achieving that vision. Values rarely change, while your mission can adapt to meet the evolving needs of the vision.
 
-And on a last note; for career advancement patience is a virtue that pays out.
+###  Career Advancement: Patience is Key
 
-Being in a role where you are performing well gives you opportunity to try new things and develop yourself. People want you to succeed and you are in an environment and situation to try things and stumble without too much outfall. This will give you plenty of opportunity to grow and shine.
+When you're excelling in your current role, it gives you space to explore new ideas and develop yourself. People want to see you succeed, and you’re in a position to experiment and learn without significant consequences. This creates ample opportunities to grow and shine.
+
