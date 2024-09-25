@@ -7,6 +7,5 @@ tags= ["Turing Society", "coding bootcamp", "full-stack", "web development"]
 images= ["turing-society-2016.JPG"]
 +++
 
-
-{{ image(src=turing-society-2016.JPG", alt="End of bootcamp picture class of 2016") }}
+{{ image(src="turing-society-2016.JPG", alt="End of bootcamp picture class of 2016") }}
 
