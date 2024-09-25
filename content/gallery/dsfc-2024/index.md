@@ -1,0 +1,12 @@
++++
+title = "Data Science in Finance Conference 2024"
+date = 2024-04-09
+[taxonomies]
+tags= ["DSFC", "design-patterns", "software-engineering"]
+[extra]
+images= ["DSFC-2024.JPG"]
++++
+
+
+{{ image(src="DSFC-2024.JPG", alt="Cover image of my Data Science in Finance presentation") }}
+
