@@ -2,7 +2,7 @@ title = "Peter Verheijen"
 description = "My personal blog"
 
 # The URL the site will be built for
-base_url = "https://netlify.peterverheijen.nl"
+base_url = "https://peterverheijen.netlify.app"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
