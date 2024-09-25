@@ -1,0 +1,29 @@
+.subscribe-container {
+    input {
+        width: 80%;                       
+        padding: 0.25rem 1rem;             
+        font-weight: bold;                  
+        background-color: transparent;      
+        border: 1px solid var(--light-grey); 
+        border-radius: var(--border-radius); 
+        color: var(--text-color);           
+
+        &:focus {
+            border-color: var(--dark-grey); 
+        }
+    }
+
+    button {
+        background-color: #39BFC8;           
+        color: white;                         
+        border: none;                         
+        padding: 10px 20px;                          
+        cursor: pointer;                      
+        border-radius: 5px;                  
+        transition: background-color 0.3s;   
+
+        &:hover {
+            background-color: darken(#39BFC8, 10%); 
+        }
+    }
+}

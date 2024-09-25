@@ -114,6 +114,17 @@
     {% endblock -%}
     </article>
     <footer>
+        <div class="subscribe-container">
+            <form name="subscribe" netlify>
+                <p>
+                    <label><input type="email" name="email" required /></label>
+                </p>
+                <p>
+                    <button type="submit">Subscribe</button>
+                </p>
+            </form>
+        </div>
+
         <div class="social">
             <ul> 
                 {# Github #} 
@@ -174,6 +185,7 @@
                 </li>
             </ul>
         </div>
+        
         <p> © {{ config.title }} {{ now() | date(format="%Y") }}
 
         {#  If you remove the powered by information, it would be appreciated if 
@@ -181,6 +193,7 @@
             those that have created your tools. #}
         {% if config.extra.disable_powered_by and config.extra.disable_powered_by == true %}{% else %}<br>Powered by <a target="_blank" href="https://getzola.org/">Zola</a>. Theme: <a target="_blank" href="https://github.com/jimmyff/zola-inky">Inky</a>.{% endif %}
         </p>
+        
     </footer>
     <script>
         feather.replace();
