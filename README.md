@@ -1,5 +1,5 @@
 # My personal blog peterverheijen.nl
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9556ce22-c88d-41b4-9e10-81c2d0aa3281/deploy-status)](https://app.netlify.com/sites/peterverheijen/deploys)
 This is the public repository that contains my personal blog. The website is deployed with Netlify. The website is built with Zola-Inky, a Zola theme built on Rust.
 
 
