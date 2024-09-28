@@ -1,11 +1,10 @@
 +++
-title = "Conversations with a coworker on building a team"
+title = "Sharing Your Vision with Your Team"
 date = 2021-09-15
 [taxonomies]
 tags= ["conversations", "team"]
 +++
 
-## Sharing Your Vision with Your Team
 When sharing a vision for your department, a top-down approach can often stifle creativity and limit strategic potential. Rather than dictating every detail, offering a broad sense of direction and purpose can be more effective. If decisions are made solely from the top, team members may feel less involved—and rightly so. Letting the team drive decisions tends to produce better outcomes because they are closer to the challenges at hand.
 
 At the core, people generally want to do good and contribute positively.

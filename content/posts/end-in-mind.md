@@ -5,7 +5,6 @@ date = 2022-06-03
 tags= ["blogs", "books"]
 +++
 
-## Begin with the End in Mind
 One of the key principles from Stephen Covey’s 7 Habits of Highly Effective People is to “begin with the end in mind.” I've found this idea invaluable in many areas of my life, especially when making decisions. In today’s fast-paced world, we constantly face tough choices. Having a clear guiding principle can help us navigate these decisions with more confidence. I’d like to share a few examples of how I’ve applied this concept in my work.
 
 ### Data Engineering
