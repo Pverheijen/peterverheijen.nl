@@ -1,0 +1,4 @@
+user-agent: *
+Disallow:
+
+Sitemap: https://peterverheijen.nl/sitemap.xml
