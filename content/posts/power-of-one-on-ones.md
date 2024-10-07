@@ -1,8 +1,8 @@
 +++
-title = "The Power of One-on-Ones: Building Stronger Teams"
+title = "One-on-One Meetings"
 date = 2024-09-28
 [taxonomies]
-tags= ["blogs", "books"]
+tags= ["blogs", "books" "one-on-one", "one-to-one"]
 +++
 
 # One-on-One Meetings: A Simple Framework for Skills and Goals
