@@ -5,8 +5,6 @@ date = 2024-09-28
 tags= ["blogs", "books", "one-on-one", "one-to-one"]
 +++
 
-# One-on-One Meetings: A Simple Framework for Skills and Goals
-
 One-on-one meetings are great for helping your team grow. Here's a quick way to structure these sessions around hard skills, soft skills, and personal goals.
 
 ## 1. Hard Skills: Building Technical Strength
