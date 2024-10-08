@@ -7,3 +7,6 @@ ZOLA_VERSION = "0.19.2"
 
 [context.production.environment]
 ZOLA_BASE_URL = "https://peterverheijen.netlify.app/"
+
+[functions]
+directory = "my_functions"

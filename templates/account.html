@@ -2,8 +2,6 @@
 
 {% block content %}
 
-<h2 class="title">{{ page.title }}</h2>
-
 <div class="account-container">
     <!-- Sign up and Login buttons for new users, hidden if logged in -->
     <div id="auth-buttons">
@@ -18,22 +16,25 @@
         </p>
         <p>
             <button onclick="netlifyIdentity.open('login')">Login</button>
-            
         </p>
     </div>
 
     <!-- Account information, shown when logged in -->
     <div id="account-info" style="display: none;">
         <p id="account-email"></p>
+        <p id="account-role"></p>
         <p>
             <span>Click here to log out of your account.</span>
         </p>
         <p>
-            <button onclick="netlifyIdentity.logout()">Logout</button> 
+            <button onclick="netlifyIdentity.logout()">Logout</button>
+        </p>
+        <p>Hello Netlify Functions</p>
+        <p>
+            <button id="call-function">Call Admin Function</button>
         </p>
     </div>
 </div>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -61,12 +62,37 @@
             document.getElementById('auth-buttons').style.display = 'none';
             document.getElementById('account-info').style.display = 'block';
             document.getElementById('account-email').textContent = `Logged in as: ${user.email}`;
+            
+            // Check if the user has roles and display them
+            const roles = user.app_metadata && user.app_metadata.roles ? user.app_metadata.roles.join(', ') : 'No role assigned';
+            document.getElementById('account-role').textContent = `Role: ${roles}`;
         }
 
         function showAuthButtons() {
             document.getElementById('auth-buttons').style.display = 'block';
             document.getElementById('account-info').style.display = 'none';
         }
+
+        // Set up event listener for the "Call Admin Function" button
+        document.getElementById('call-function').addEventListener('click', function() {
+            const user = netlifyIdentity.currentUser();
+
+            if (user) {
+                user.jwt().then((token) => {
+                    fetch('http://127.0.0.1:8888/.netlify/functions/hello', {
+                        method: 'GET',
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    })
+                    .then((response) => response.json())
+                    .then((data) => console.log(data))
+                    .catch((error) => console.error('Error:', error));
+                });
+            } else {
+                console.error('No user is logged in.');
+            }
+        });
     });
 </script>
 
