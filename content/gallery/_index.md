@@ -1,4 +1,4 @@
-+++ 
++++
 title = "Images on the website" 
 sort_by = "date" 
 template = "gallery.html" 
