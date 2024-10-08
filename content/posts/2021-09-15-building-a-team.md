@@ -1,6 +1,7 @@
 +++
 title = "Sharing Your Vision with Your Team"
 date = 2021-09-15
+description = "A guide on how to effectively share your vision with your team, focusing on empowering people, fostering processes, and driving progress through recognition and alignment with core values."
 [taxonomies]
 tags= ["conversations", "team"]
 +++

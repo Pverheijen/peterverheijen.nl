@@ -2,6 +2,7 @@
 title = "The Five Dysfunctions of a Team: A Breakdown for Team Leaders"
 date = 2024-10-10
 draft = true
+description = "An overview of 'The Five Dysfunctions of a Team' by Patrick Lencioni, highlighting the common challenges that teams face and how leaders can address them."
 [taxonomies]
 tags = ["blogs", "books", "team leadership", "Patrick Lencioni", "dysfunctions"]
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Begin with the end in mind"
 date = 2022-06-03
+description = "A reflection on Stephen Covey's principle of 'begin with the end in mind' and its practical applications in data engineering, dashboards, and data science."
 [taxonomies]
 tags= ["blogs", "books"]
 +++
