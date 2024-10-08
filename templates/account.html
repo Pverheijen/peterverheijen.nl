@@ -29,8 +29,8 @@
         <p>
             <button onclick="netlifyIdentity.logout()">Logout</button>
         </p>
-        <p>Hello Netlify Functions</p>
-        <p>
+        <!-- "Call Admin Function" button, shown only if user has 'admin' role -->
+        <p id="admin-function-container" style="display: none;">
             <button id="call-function">Call Admin Function</button>
         </p>
     </div>
@@ -64,8 +64,15 @@
             document.getElementById('account-email').textContent = `Logged in as: ${user.email}`;
             
             // Check if the user has roles and display them
-            const roles = user.app_metadata && user.app_metadata.roles ? user.app_metadata.roles.join(', ') : 'No role assigned';
-            document.getElementById('account-role').textContent = `Role: ${roles}`;
+            const roles = user.app_metadata && user.app_metadata.roles ? user.app_metadata.roles : [];
+            document.getElementById('account-role').textContent = `Role: ${roles.length > 0 ? roles.join(', ') : 'No role assigned'}`;
+
+            // Show "Call Admin Function" button only if the user has 'admin' role
+            if (roles.includes('admin')) {
+                document.getElementById('admin-function-container').style.display = 'block';
+            } else {
+                document.getElementById('admin-function-container').style.display = 'none';
+            }
         }
 
         function showAuthButtons() {
