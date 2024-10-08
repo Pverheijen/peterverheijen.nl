@@ -1,6 +1,13 @@
-.subscribe-container {
+.account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; // Ensures the container takes up the full height of the viewport
+
     p {
         margin: 0.5rem 0; // Add some margin for spacing between paragraphs
+        text-align: center; // Center text inside the paragraph
 
         button {
             background-color: #39BFC8;           // Same background color as the subscribe button

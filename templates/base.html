@@ -20,6 +20,8 @@
           title="{{config.title}}"
           href="{{ get_url(path='atom.xml',trailing_slash=false)|safe}}">
     {% endblock rss -%}
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!-- Plausible -->
     <script defer data-domain="peterverheijen.nl" src="https://plausible.io/js/script.js"></script>
     {% if config.extra.google_analytics_tag_id -%}
@@ -126,7 +128,6 @@
                 </p>
             </form>
         </div>
-
         <div class="social">
             <ul> 
                 {# Github #} 

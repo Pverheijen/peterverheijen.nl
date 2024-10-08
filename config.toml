@@ -1,6 +1,8 @@
 title = "Peter Verheijen"
 description = "My personal blog"
 
+generate_feeds = true
+
 # The URL the site will be built for
 base_url = "https://peterverheijen.nl"
 
@@ -66,10 +68,11 @@ link_github_username = "Pverheijen"
 # link_instagram_username = ""
 
 menu_links = [
-    { url = "$BASE_URL/", name = "About" },
+    # { url = "$BASE_URL/", name = "About" },
     { url = "$BASE_URL/posts/", name = "Posts" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
     { url = "$BASE_URL/tags/", name = "Tags" },
     # { url = "https://github.com/jimmyff/zola-inky", name = "Github" },
     { url = "$BASE_URL/search/", name = "Search" },
+    { url = "$BASE_URL/account/", name = "Account" },
 ]

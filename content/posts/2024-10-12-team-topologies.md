@@ -1,5 +1,6 @@
 +++
 title = "Understanding Team Topologies"
+authors = ["Peter Verheijen"]
 date = 2024-10-12
 description = "A summary of the book 'Team Topologies' focusing on different team structures and interactions to optimize modern software delivery."
 draft = true

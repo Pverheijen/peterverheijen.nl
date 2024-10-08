@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="title">{{ page.title }}</h2>
+
+<div class="account-container">
+    <!-- Sign up and Login buttons for new users, hidden if logged in -->
+    <div id="auth-buttons">
+        <p>
+            <span>Click here to create an account.</span>
+        </p>
+        <p>
+            <button onclick="netlifyIdentity.open('signup')">Sign up</button>
+        </p>
+        <p>
+            <span>Click here to log into your account.</span>
+        </p>
+        <p>
+            <button onclick="netlifyIdentity.open('login')">Login</button>
+            
+        </p>
+    </div>
+
+    <!-- Account information, shown when logged in -->
+    <div id="account-info" style="display: none;">
+        <p id="account-email"></p>
+        <p>
+            <span>Click here to log out of your account.</span>
+        </p>
+        <p>
+            <button onclick="netlifyIdentity.logout()">Logout</button> 
+        </p>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Netlify Identity
+        netlifyIdentity.init();
+
+        // Check if user is already logged in after init
+        const user = netlifyIdentity.currentUser();
+        if (user) {
+            showAccountInfo(user);
+        } else {
+            showAuthButtons();
+        }
+
+        // Set up event listeners for login and logout
+        netlifyIdentity.on('login', user => {
+            showAccountInfo(user);
+        });
+
+        netlifyIdentity.on('logout', () => {
+            showAuthButtons();
+        });
+
+        function showAccountInfo(user) {
+            document.getElementById('auth-buttons').style.display = 'none';
+            document.getElementById('account-info').style.display = 'block';
+            document.getElementById('account-email').textContent = `Logged in as: ${user.email}`;
+        }
+
+        function showAuthButtons() {
+            document.getElementById('auth-buttons').style.display = 'block';
+            document.getElementById('account-info').style.display = 'none';
+        }
+    });
+</script>
+
+{% endblock content %}
