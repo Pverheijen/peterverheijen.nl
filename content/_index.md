@@ -11,6 +11,6 @@ Colleagues often describe me as enthusiastic, communicative, and people-oriented
 
 Here, I’ll be sharing articles about my experiences and approach as a Tech Lead, offering insights into leadership.
 
-In addition, I’m exploring Rust from the perspective of a Python developer. If you’re a Pythonista interested in learning Rust, you’ll find a series of blog posts documenting my journey at [pythontorust.nl](pythontorust.nl).
+In addition, I’m exploring Rust from the perspective of a Python developer. If you’re a Pythonista interested in learning Rust, you’ll find a series of blog posts documenting my journey at [pythontorust.nl](https://pythontorust.nl).
 
 Make sure to subscribe if you’d like to stay updated on my latest articles!
