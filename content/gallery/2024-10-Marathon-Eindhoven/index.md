@@ -1,5 +1,5 @@
 +++
-title = "Eindhoven Marathom bib"
+title = "Eindhoven Marathon bib"
 date = 2024-10-04
 [taxonomies]
 tags= ["Marathon", "Eindhoven", "bib"]

@@ -2,7 +2,7 @@
 title = "One-on-One Meetings"
 date = 2024-09-28
 [taxonomies]
-tags= ["blogs", "books", "one-on-one", "one-to-one"]
+tags = ["blogs", "books", "one-on-one", "one-to-one"]
 +++
 
 One-on-one meetings are great for helping your team grow. Here's a quick way to structure these sessions around hard skills, soft skills, and personal goals.
