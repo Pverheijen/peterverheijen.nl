@@ -3,7 +3,7 @@ title = "Understanding The Staff Engineer's Path"
 authors = ["Peter Verheijen"]
 date = 2024-10-13
 description = "A summary of the book 'The Staff Engineer's Path' focusing on the transition from individual contributor to technical leadership, and the key skills required."
-draft = true
+draft = false
 [taxonomies]
 tags = ["leadership", "engineering", "staff engineer"]
 +++

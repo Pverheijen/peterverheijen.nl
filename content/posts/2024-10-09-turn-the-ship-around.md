@@ -2,7 +2,7 @@
 title = "Turn the Ship Around! - A Summary"
 authors = ["Peter Verheijen"]
 date = 2024-10-09
-draft = true
+draft = false
 description = "A summary of 'Turn the Ship Around!' by David Marquet, detailing his revolutionary approach to leadership through Intent-Based Leadership and decentralizing decision-making."
 [taxonomies]
 tags = ["leadership", "empowering", "leader-follower", "leader-leader"]
