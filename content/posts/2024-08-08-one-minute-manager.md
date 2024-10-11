@@ -1,7 +1,7 @@
 +++
 title = "The New One Minute Manager: Simple and Effective Tools for Leadership"
 authors = ["Peter Verheijen"]
-date = 2024-10-08
+date = 2024-08-08
 description = "A summary of the core concepts from The New One Minute Manager, focusing on One Minute Goals, One Minute Praising, and One Minute Redirects."
 [taxonomies]
 tags= ["blogs", "books", "leadership", "management"]
