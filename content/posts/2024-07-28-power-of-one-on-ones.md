@@ -1,7 +1,7 @@
 +++
 title = "One-on-One Meetings"
 authors = ["Peter Verheijen"]
-date = 2024-09-28
+date = 2024-07-28
 description = "A guide to structuring one-on-one meetings to support team growth by focusing on hard skills, soft skills, and personal goals."
 [taxonomies]
 tags = ["blogs", "books", "one-on-one", "one-to-one"]

@@ -1,7 +1,7 @@
 +++
 title = "Surrounded by Idiots - A Summary"
 authors = ["Peter Verheijen"]
-date = 2024-10-11
+date = 2024-09-29
 draft = false
 description = "A summary of 'Surrounded by Idiots' by Thomas Erikson, explaining how the DISC model classifies personality types and how understanding them can enhance communication."
 [taxonomies]
