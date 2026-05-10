@@ -38,7 +38,7 @@ anchors = "on"
 [extra]
 
 # Place your avatar in your /static folder
-avatar = "/profile.jpg"
+avatar = "/25april-01.jpg"
 
 # Your Google Analytics measurement id ("G-XXXXXXXXXX")
 # google_analytics_tag_id = "";
