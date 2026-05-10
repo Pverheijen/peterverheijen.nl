@@ -4,8 +4,8 @@
 <h2 class="title">{{ section.title }}</h2>
 <article>{{ section.content | safe }}</article>
 {% for year, posts in section.pages | group_by(attribute="year") -%}
+<h2 class="archive-year">{{ year }}</h2>
 <ul class="gallery flat">
-  <h2 class="archive-year">{{ year }}</h2>
   {% for post in posts -%}
   {% if post.extra.images  -%}
   {% for image in post.extra.images -%}

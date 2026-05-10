@@ -4,8 +4,8 @@
 <h2>{{taxonomy.name | capitalize }} &raquo; {{ term.name | capitalize }}</h2>
 
 {%  for year, posts in  term.pages | group_by(attribute="year")  %}
+<h2 class="archive-year">{{ year }}</h2>
 <ul class="posts flat">
-    <h2 class="archive-year">{{ year }}</h2>
     {% for post in posts %}
     <li class="post">
       <div class="post-header">

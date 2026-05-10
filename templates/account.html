@@ -3,6 +3,8 @@
 {% block content %}
 
 <div class="account-container">
+    <p id="account-status" class="account-status" role="status" aria-live="polite"></p>
+
     <!-- Sign up and Login buttons for new users, hidden if logged in -->
     <div id="auth-buttons">
         <p>
@@ -45,18 +47,28 @@
         const user = netlifyIdentity.currentUser();
         if (user) {
             showAccountInfo(user);
+            setStatus('You are logged in.');
         } else {
             showAuthButtons();
+            setStatus('You are currently logged out.');
         }
 
         // Set up event listeners for login and logout
         netlifyIdentity.on('login', user => {
             showAccountInfo(user);
+            setStatus('Login successful.');
         });
 
         netlifyIdentity.on('logout', () => {
             showAuthButtons();
+            setStatus('You have been logged out.');
         });
+
+        function setStatus(message, isError = false) {
+            const statusElement = document.getElementById('account-status');
+            statusElement.textContent = message;
+            statusElement.classList.toggle('error', isError);
+        }
 
         function showAccountInfo(user) {
             document.getElementById('auth-buttons').style.display = 'none';
@@ -85,6 +97,7 @@
             const user = netlifyIdentity.currentUser();
 
             if (user) {
+                setStatus('Calling admin function...');
                 user.jwt().then((token) => {
                     fetch('/.netlify/functions/hello', {
                         method: 'GET',
@@ -93,11 +106,18 @@
                         },
                     })
                     .then((response) => response.json())
-                    .then((data) => console.log(data))
-                    .catch((error) => console.error('Error:', error));
+                    .then((data) => {
+                        const message = data && data.message ? data.message : 'Admin function succeeded.';
+                        setStatus(message);
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        setStatus('Admin function failed. Please try again.', true);
+                    });
                 });
             } else {
                 console.error('No user is logged in.');
+                setStatus('No user is logged in.', true);
             }
         });
     });

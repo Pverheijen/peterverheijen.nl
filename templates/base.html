@@ -77,7 +77,7 @@
         {% if config.extra.search_path -%}
         {% set search_url = config.extra.search_path  | replace(from="$BASE_URL", to=config.base_url) -%}
         <div class="right-button">
-            <a href="{{ search_url }}" alt="Search" class="{% if current_url and current_url==search_url %}active{%  endif %}">
+            <a href="{{ search_url }}" aria-label="Search" class="{% if current_url and current_url==search_url %}active{%  endif %}">
                 🔎
             </a>
         </div>
@@ -88,13 +88,13 @@
             {% for menu_link in config.extra.menu_links -%}
                 {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) -%} 
                 <a {% if current_url and current_url==link_url %}class="active"  {%  endif %}
-                href="{{ link_url | safe}} " alt="{{menu_link.name}}">{% if menu_link.emoji -%}<span class="emoji">{{ menu_link.emoji }}</span>{% endif -%}<span class="name">{{menu_link.name}}</span></a> 
+                href="{{ link_url | safe}} " aria-label="{{menu_link.name}}">{% if menu_link.emoji -%}<span class="emoji">{{ menu_link.emoji }}</span>{% endif -%}<span class="name">{{menu_link.name}}</span></a> 
             {% endfor -%} 
 
             {% if config.extra.overflow_menu_links -%}
 
-            <details class="overflow-menu dropdown dropdown-right" alt="Menu">
-                <summary>
+            <details class="overflow-menu dropdown dropdown-right">
+                <summary aria-label="More menu">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -103,7 +103,7 @@
                 {% for menu_link in config.extra.overflow_menu_links -%}
                 {% set link_url = menu_link.url | replace(from="$BASE_URL", to=config.base_url) -%} 
                     <li><a {% if current_url and current_url==link_url %}class="active"  {%  endif %}
-                    href="{{ link_url | safe}} " alt="{{menu_link.name}}">{% if menu_link.emoji -%}<span class="emoji">{{ menu_link.emoji }}</span>{% endif -%}<span class="name">{{menu_link.name}}</span></a></li>
+                    href="{{ link_url | safe}} " aria-label="{{menu_link.name}}">{% if menu_link.emoji -%}<span class="emoji">{{ menu_link.emoji }}</span>{% endif -%}<span class="name">{{menu_link.name}}</span></a></li>
                 {% endfor -%} 
                 </ul>
             </details>

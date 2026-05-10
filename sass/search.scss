@@ -21,6 +21,12 @@
 
 }
 
+.search-results__empty {
+  display: none;
+  margin: 0.5rem 0 0;
+  color: var(--subtle-text);
+}
+
 .search-results__items {
   list-style: none;
 }

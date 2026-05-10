@@ -132,6 +132,7 @@ function initSearch() {
   var $searchInput = document.getElementById("search");
   var $searchResults = document.querySelector(".search-results");
   var $searchResultsItems = document.querySelector(".search-results__items");
+  var $searchResultsEmpty = document.querySelector(".search-results__empty");
   var MAX_ITEMS = 20;
 
   var options = {
@@ -151,6 +152,9 @@ function initSearch() {
     }
     $searchResults.style.display = term === "" ? "none" : "block";
     $searchResultsItems.innerHTML = "";
+    if ($searchResultsEmpty) {
+      $searchResultsEmpty.style.display = "none";
+    }
     currentTerm = term;
     if (term === "") {
       return;
@@ -158,7 +162,10 @@ function initSearch() {
 
     var results = index.search(term, options);
     if (results.length === 0) {
-      $searchResults.style.display = "none";
+      $searchResults.style.display = "block";
+      if ($searchResultsEmpty) {
+        $searchResultsEmpty.style.display = "block";
+      }
       return;
     }
 

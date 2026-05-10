@@ -5,6 +5,15 @@
     align-items: center;
     min-height: 50vh; // Ensures the container takes up the full height of the viewport
 
+    .account-status {
+        margin: 0 0 1rem;
+        color: var(--text-color);
+
+        &.error {
+            color: #b42318;
+        }
+    }
+
     p {
         margin: 0.5rem 0; // Add some margin for spacing between paragraphs
         text-align: center; // Center text inside the paragraph

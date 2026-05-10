@@ -66,9 +66,15 @@ a.active {
   text-decoration: underline;
 }
 
-input:focus,
-textarea:focus {
-  outline: none;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 pre,
@@ -87,6 +93,6 @@ code {
   h4,
   h5,
   h6 {
-    letter-spacing: 1px;
+    letter-spacing: normal;
   }
 }

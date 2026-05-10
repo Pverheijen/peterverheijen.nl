@@ -6,8 +6,8 @@
 <article>{{ section.content | safe }}</article>
 
 {% for year, posts in section.pages | group_by(attribute="year") %}
+<h2 class="archive-year">{{ year }}</h2>
 <ul class="posts flat">
-  <h2 class="archive-year">{{ year }}</h2>
   {% for post in posts %}
   <li class="post">
     <div class="post-header">
